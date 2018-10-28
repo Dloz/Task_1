@@ -1,0 +1,7 @@
+E:\SharpProblems\ProblemSet3\ProblemSet3\bin\Debug\ProblemSet3.exe.config
+E:\SharpProblems\ProblemSet3\ProblemSet3\bin\Debug\ProblemSet3.exe
+E:\SharpProblems\ProblemSet3\ProblemSet3\bin\Debug\ProblemSet3.pdb
+E:\SharpProblems\ProblemSet3\ProblemSet3\obj\Debug\ProblemSet3.csprojAssemblyReference.cache
+E:\SharpProblems\ProblemSet3\ProblemSet3\obj\Debug\ProblemSet3.csproj.CoreCompileInputs.cache
+E:\SharpProblems\ProblemSet3\ProblemSet3\obj\Debug\ProblemSet3.exe
+E:\SharpProblems\ProblemSet3\ProblemSet3\obj\Debug\ProblemSet3.pdb

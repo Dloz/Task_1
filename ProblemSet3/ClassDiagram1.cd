@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="Fluent builder">
+    <Position X="3.586" Y="0.521" Height="0.291" Width="1.305" />
+  </Comment>
+  <Comment CommentText="Loyalty Program&#xD;&#xA;">
+    <Position X="4.922" Y="0.5" Height="0.411" Width="1.329" />
+  </Comment>
+  <Class Name="ProblemSet3.Customer">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAAAAAAAABAEhAAAQAAAAAAAAACQAAAAAAAAA=</HashCode>
+      <FileName>User\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemSet3.Cart">
+    <Position X="10.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAACAAAACAAAAAIAAAAACAAAAAAAA=</HashCode>
+      <FileName>User\Cart.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProblemSet3.Product">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemSet3.DelieverInfo">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAQAAAAACCAAAA=</HashCode>
+      <FileName>User\UserInfo\DelieverInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemSet3.Order">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProblemSet3.CustomerType">
+    <Position X="2" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAACAgA=</HashCode>
+      <FileName>User\UserInfo\CustomerType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemSet3.Permissions">
+    <Position X="2" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAIAgAAAAAEAAAAAAAAAQA=</HashCode>
+      <FileName>User\Permissions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemSet3.Validator">
+    <Position X="12.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemSet3.Catalog">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Catalog\Catalog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemSet3.Clothes">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Products\Clothes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemSet3.Shoes">
+    <Position X="6.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Products\Shoes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemSet3.Accesories">
+    <Position X="3.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Accesories.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ProblemSet3.Name">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>User\UserInfo\Name.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="ProblemSet3.IBuy">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IBuy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProblemSet3.ICarter">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICarter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

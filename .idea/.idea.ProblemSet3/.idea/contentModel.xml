@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\DLoz\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\DLoz\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\DLoz\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_ProblemSet3.-902039943.00" t="ExcludeRecursive" />
+    <e p="E:\SharpProblems\ProblemSet3" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="ProblemSet3" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Catalog" t="Include">
+          <e p="Catalog.cs" t="Include" />
+        </e>
+        <e p="ClassDiagram1.cd" t="Include" />
+        <e p="Exceptions" t="Include">
+          <e p="ContainsException.cs" t="Include" />
+          <e p="LimitException.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IBuy.cs" t="Include" />
+          <e p="ICarter.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Order.cs" t="Include" />
+        <e p="ProblemSet3.csproj" t="IncludeRecursive" />
+        <e p="Products" t="Include">
+          <e p="Accesories.cs" t="Include" />
+          <e p="Clothes.cs" t="Include" />
+          <e p="Product.cs" t="Include" />
+          <e p="Shoes.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="User" t="Include">
+          <e p="Cart.cs" t="Include" />
+          <e p="Customer.cs" t="Include" />
+          <e p="Permissions.cs" t="Include" />
+          <e p="UserInfo" t="Include">
+            <e p="CustomerType.cs" t="Include" />
+            <e p="DelieverInfo.cs" t="Include" />
+            <e p="Name.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Validator.cs" t="Include" />
+      </e>
+      <e p="ProblemSet3.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
