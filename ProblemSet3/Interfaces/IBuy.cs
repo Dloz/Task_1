@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ProblemSet3 {
     public interface IBuy {
-        void ReduceBalance(Customer customer);
+        void ReduceBalance();
         string Request();
     }
 }

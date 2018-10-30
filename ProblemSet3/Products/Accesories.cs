@@ -5,5 +5,6 @@ using System.Text;
 
 namespace ProblemSet3 {
     public class Accesories : Product {
+        public string Type { get; set; }
     }
 }

@@ -6,17 +6,12 @@ using System.IO;
 
 namespace ProblemSet3 {
     public class Catalog {
-        public List<Product> Products {
-            get => default(List<Product>);
-            set {
-                
-            }
-        }
+        public List<Product> Products =  new List<Product>();
     }
 
     public static class CatalogBuilder {
 
-        static void Build(List<Product> products) {
+        public static void Build(List<Product> products) {
             products.Add(new Product(123d,"Shirt", "abc"));
             products.Add(new Product(100d,"T-shirt", "abc"));
             products.Add(new Product(200d,"Pants", "abc"));

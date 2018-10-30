@@ -5,26 +5,18 @@ using System.Text;
 
 namespace ProblemSet3 {
 
-    public class Order : IBuy {
+    public class Order {
         Customer _customer;
-        List<Product> _products;
-        Product _product;
-        
-        public Order(Customer customer, 
-            Product product,
-            List<Product> products = default(List<Product>)) {
+        public Order(Customer customer) {
             _customer = customer;
-            _products = products;
-            _product = product; // send order details into ctor and that's it
+        }
 
+        public void MakeOrder() {
+            _customer.ReduceBalance();
+            _customer.Request();
+            _customer.CustomerCart = null;
         }
-        void IBuy.ReduceBalance(Customer customer) {
-            customer.Balance -= _product.Price;
-            customer.Spent += _product.Price;
-        }
-        string IBuy.Request() {
-            return $"{_customer} has ordered {_products.ToString()}"; // override method ToString for LIst
-        }
+        
     }
 }
 

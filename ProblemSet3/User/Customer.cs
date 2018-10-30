@@ -4,41 +4,61 @@ using System.Linq;
 using System.Text;
 
 namespace ProblemSet3 {
-    public class Customer {
+    public class Customer: IBuy {
         private Guid _id = new Guid();
         public double _discount = default(double);
+        private CustomerType _type = new CustomerType();
 
         public int Age { get; set; }
         public double Balance { get; set; }
         public double Spent { get; set; }
-        public Cart Cart { get; set; }
-        public CustomerType Type { get; set; }
+        public Cart CustomerCart { get; set; }
+
+        public CustomerType Type {
+            get => _type;
+            set => _type = value;
+        }
+
         public Name Name { get; set; }
         public DelieverInfo DelieverInfo { get; set; }
-
         
+        public void ReduceBalance() {
+            foreach (var item in CustomerCart._goods) {
+                Balance -= item.Price;
+                Spent += item.Price;
+            }
+        }
+        public string Request() {
+            return $"{Name.ToString()} has ordered {CustomerCart.ToString()}"; 
+        }
+
+        public void Buy() {
+            ReduceBalance();
+            Request();
+        }
+
     }
 
 
-    public class UserBuilder {
+    public class CustomerBuilder {
         private Customer customer;
-        public UserBuilder() {
+        public CustomerBuilder() {
             customer = new Customer();
         }
-        public UserBuilder SetName(string firstName = "", string lastName = "") {
+        public CustomerBuilder SetName(string firstName = "", string lastName = "") {
             Name name = new Name(firstName: firstName, lastName: lastName);
             customer.Name = name;
             return this;
         }
-        public UserBuilder SetType(CustomerType type) {
+        public CustomerBuilder SetType(CustomerType type) {
             customer.Type = type;
             return this;
         }
-        public UserBuilder SetAge(int age) {
+        public CustomerBuilder SetAge(int age) {
             customer.Age = age > 0 ? age : 0;
             return this;
         }
-        public UserBuilder SetDelieverInfo(int home,
+        public CustomerBuilder SetDelieverInfo(int home,
                             string street,
                             int postalCode,
                             int appartmentNumber = 0) {
@@ -46,7 +66,7 @@ namespace ProblemSet3 {
             return this;
         }
 
-        public static implicit operator Customer(UserBuilder builder) {
+        public static implicit operator Customer(CustomerBuilder builder) {
             return builder.customer;
         }
     }

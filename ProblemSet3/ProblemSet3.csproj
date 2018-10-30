@@ -43,10 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cart\Cart.cs" />
+    <Compile Include="Cart\CartItem.cs" />
     <Compile Include="Exceptions\ContainsException.cs" />
     <Compile Include="Exceptions\LimitException.cs" />
     <Compile Include="Products\Accesories.cs" />
-    <Compile Include="User\Cart.cs" />
     <Compile Include="Catalog\Catalog.cs" />
     <Compile Include="Products\Clothes.cs" />
     <Compile Include="User\Customer.cs" />

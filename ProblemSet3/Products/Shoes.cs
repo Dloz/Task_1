@@ -5,16 +5,8 @@ using System.Text;
 
 namespace ProblemSet3 {
     public class Shoes : Product {
-        public int Size {
-            get => default(int);
-            set {
-            }
-        }
+        public int Size { get; set; }
 
-        public string Color {
-            get => default(string);
-            set {
-            }
-        }
+        public string Color { get; set; }
     }
 }
