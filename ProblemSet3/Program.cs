@@ -20,10 +20,17 @@ namespace ProblemSet3 {
             customer.CustomerCart = new Cart() {
                 _limit = 50
             };
-            customer.CustomerCart.AddProduct(catalog.Products[0]);
-            customer.CustomerCart.AddProduct(catalog.Products[1]);
+            try { 
+                customer.CustomerCart.AddProduct(catalog.Products[0]);
+                customer.CustomerCart.AddProduct(catalog.Products[1]);
+                
+            }
+            catch (Exception e) {
+                Console.WriteLine(e.Message);
+                throw;
+            }
             
-            
+              
         }
     }
 }

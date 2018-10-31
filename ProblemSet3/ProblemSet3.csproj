@@ -47,6 +47,8 @@
     <Compile Include="Cart\CartItem.cs" />
     <Compile Include="Exceptions\ContainsException.cs" />
     <Compile Include="Exceptions\LimitException.cs" />
+    <Compile Include="Fake Objects\Order.cs" />
+    <Compile Include="Fake Objects\Validator.cs" />
     <Compile Include="Products\Accesories.cs" />
     <Compile Include="Catalog\Catalog.cs" />
     <Compile Include="Products\Clothes.cs" />
@@ -57,12 +59,10 @@
     <Compile Include="Interfaces\IBuy.cs" />
     <Compile Include="Interfaces\ICarter.cs" />
     <Compile Include="User\UserInfo\Name.cs" />
-    <Compile Include="Order.cs" />
     <Compile Include="User\Permissions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Products\Shoes.cs" />
-    <Compile Include="Validator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -21,12 +21,15 @@
           <e p="ContainsException.cs" t="Include" />
           <e p="LimitException.cs" t="Include" />
         </e>
+        <e p="Fake Objects" t="Include">
+          <e p="Order.cs" t="Include" />
+          <e p="Validator.cs" t="Include" />
+        </e>
         <e p="Interfaces" t="Include">
           <e p="IBuy.cs" t="Include" />
           <e p="ICarter.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive" />
-        <e p="Order.cs" t="Include" />
         <e p="ProblemSet3.csproj" t="IncludeRecursive" />
         <e p="Products" t="Include">
           <e p="Accesories.cs" t="Include" />
@@ -47,7 +50,6 @@
             <e p="Name.cs" t="Include" />
           </e>
         </e>
-        <e p="Validator.cs" t="Include" />
       </e>
       <e p="ProblemSet3.sln" t="IncludeFlat" />
     </e>

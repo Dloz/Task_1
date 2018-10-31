@@ -13,12 +13,8 @@ namespace ProblemSet3 {
             get => _amount;
             set => _amount = _goods.Count;
         }
-        public Catalog Catalog { get; set; }
 
         public void AddProduct(Product product, int amount = 1) {
-            if (!Validator.CheckAvailability(product, Catalog.Products)) 
-                throw  new ContainsException();
-              
             if (_goods.Count == _limit)
                 throw new LimitException();
             for (int i = 0; i < amount; i++) {
