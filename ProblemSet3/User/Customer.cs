@@ -4,32 +4,26 @@ using System.Linq;
 using System.Text;
 
 namespace ProblemSet3 {
-    public class Customer: IBuy {
-        private Guid _id = new Guid();
+    public class Customer: IBuyable {
         public double _discount = default(double);
-        private CustomerType _type = new CustomerType();
 
         public int Age { get; set; }
         public double Balance { get; set; }
         public double Spent { get; set; }
-        public Cart CustomerCart { get; set; }
-
-        public CustomerType Type {
-            get => _type;
-            set => _type = value;
-        }
+        public Cart CustomerCart { get; set; } = new Cart();
+        public CustomerType Type { get; set; } = new CustomerType();
 
         public Name Name { get; set; }
         public DelieverInfo DelieverInfo { get; set; }
         
-        public void ReduceBalance() {
+        private void ReduceBalance() {
             foreach (var item in CustomerCart._goods) {
-                Balance -= item.Price;
-                Spent += item.Price;
+                Balance -= item.Product.Price;
+                Spent += item.Product.Price;
             }
         }
-        public string Request() {
-            return $"{Name.ToString()} has ordered {CustomerCart.ToString()}"; 
+        private void Request() {
+            Console.WriteLine($"{Name.ToString()} has ordered {CustomerCart.ToString()}");
         }
 
         public void Buy() {

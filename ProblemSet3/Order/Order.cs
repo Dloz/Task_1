@@ -14,12 +14,7 @@ namespace ProblemSet3 {
         }
 
         public void MakeOrder() {
-            _customer.ReduceBalance();
-            _customer.Request();
-            foreach (var product in _customer.CustomerCart._goods) {
-                if (Validator.CheckAvailability(product, _catalog.Products))
-                    _customer.CustomerCart._goods.Remove(product); // TODO remove all products
-            }
+            _customer.Buy();
             _customer.CustomerCart = null;
         }
         

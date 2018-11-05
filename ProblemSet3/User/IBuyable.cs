@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 
 namespace ProblemSet3 {
-    public interface IBuy {
-        void ReduceBalance();
-        string Request();
+    public interface IBuyable {
+        void Buy();
     }
 }

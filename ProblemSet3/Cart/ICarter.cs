@@ -7,6 +7,5 @@ namespace ProblemSet3 {
     public interface ICarter {
         void AddProduct(Product product, int amount);
         void RemoveProduct(Product product, int amount);
-
     }
 }

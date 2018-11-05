@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,19 +46,19 @@
   <ItemGroup>
     <Compile Include="Cart\Cart.cs" />
     <Compile Include="Cart\CartItem.cs" />
+    <Compile Include="Cart\ICarter.cs" />
     <Compile Include="Exceptions\ContainsException.cs" />
     <Compile Include="Exceptions\LimitException.cs" />
-    <Compile Include="Fake Objects\Order.cs" />
-    <Compile Include="Fake Objects\Validator.cs" />
+    <Compile Include="Order\Order.cs" />
+    <Compile Include="Order\Validator.cs" />
     <Compile Include="Products\Accesories.cs" />
     <Compile Include="Catalog\Catalog.cs" />
     <Compile Include="Products\Clothes.cs" />
     <Compile Include="User\Customer.cs" />
+    <Compile Include="User\IBuyable.cs" />
     <Compile Include="User\UserInfo\CustomerType.cs" />
     <Compile Include="User\UserInfo\DelieverInfo.cs" />
     <Compile Include="Products\Product.cs" />
-    <Compile Include="Interfaces\IBuy.cs" />
-    <Compile Include="Interfaces\ICarter.cs" />
     <Compile Include="User\UserInfo\Name.cs" />
     <Compile Include="User\Permissions.cs" />
     <Compile Include="Program.cs" />
