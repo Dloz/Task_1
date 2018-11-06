@@ -8,5 +8,9 @@ namespace ProblemSet3 {
         public CartItem(Product product) {
             Product = product;
         }
+
+        public override string ToString() {
+            return Product.ToString() + $"Amount: {Amount}";
+        }
     }
 }

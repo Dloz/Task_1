@@ -26,6 +26,9 @@ namespace ProblemSet3 {
                 Console.WriteLine(e.Message);
                 throw;
             }
+
+            Console.WriteLine(catalog.ToString());
+            
             var order = new Order(customer, catalog);
             order.MakeOrder();
               

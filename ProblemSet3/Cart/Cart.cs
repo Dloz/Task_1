@@ -4,35 +4,40 @@ using System.Linq;
 namespace ProblemSet3 {
     public class Cart : ICarter {
         internal int Limit = 50;
-        public List<CartItem> _goods = new List<CartItem>();
+        public readonly List<CartItem> Goods = new List<CartItem>();
         private int _amount = default(int);
 
         public int Amount {
             get => _amount;
-            set => _amount = _goods.Count;
+            set => _amount = Goods.Count;
         }
 
         public void AddProduct(Product product, int amount = 1) {
-            if (_goods.Count == Limit)
+            if (Goods.Count == Limit)
                 throw new LimitException();
-            if (_goods.Any(x => x.Product.ItemId == product.ItemId)) {
-                _goods.Find(x => x.Product.ItemId == product.ItemId).Amount++;
+            if (Goods.Any(x => x.Product.ItemId == product.ItemId)) {
+                Goods.Find(x => x.Product.ItemId == product.ItemId).Amount++;
                 return;
             }
-            _goods.Add((new CartItem(product)));
-            _goods.Last().Amount = amount;
+            Goods.Add((new CartItem(product)));
+            Goods.Last().Amount = amount;
         }
         public void RemoveProduct(Product product, int amount = 1) {
-            if (_goods.All(x => x.Product.ItemId != product.ItemId))
+            if (Goods.All(x => x.Product.ItemId != product.ItemId))
                 throw new ContainsException();
-            if (amount == _goods.Find(x => x.Product.ItemId == product.ItemId).Amount)
-                _goods.RemoveAll(x => x.Product.ItemId == product.ItemId);
+            if (amount == Goods.Find(x => x.Product.ItemId == product.ItemId).Amount)
+                Goods.RemoveAll(x => x.Product.ItemId == product.ItemId);
             else
-                _goods.Find(x => x.Product.ItemId == product.ItemId).Amount -= amount;
+                Goods.Find(x => x.Product.ItemId == product.ItemId).Amount -= amount;
                 
         }
         public override string ToString() {
-            // TODO 
+            var str = "";
+            foreach (var product in Goods) {
+                str += product.ToString() + "\n";
+            }
+
+            return str;
         }
     }
 }

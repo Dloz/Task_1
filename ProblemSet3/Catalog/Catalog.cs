@@ -6,10 +6,15 @@ using System.IO;
 
 namespace ProblemSet3 {
     public class Catalog {
-        public List<Product> Products =  new List<Product>();
+        public readonly List<Product> Products =  new List<Product>();
 
         public override string ToString() {
-            return Products.ToString();
+            var str = "";
+            foreach (var product in Products) {
+                str += product.ToString() + "\n";
+            }
+
+            return str;
         }
     }
 
@@ -19,13 +24,8 @@ namespace ProblemSet3 {
             products.Add(new Product(123d,"Shirt", "abc", 1));
             products.Add(new Product(100d,"T-shirt", "abc", 2));
             products.Add(new Product(200d,"Pants", "abc", 3));
-        }
-
-        static void Read(string path) {
-            using (var sr = new StreamReader(path)) {
-                // read data from text file
-            
-            }
+            products.Add(new Clothes(250d,"Shirts","Manufacturer", 4, "M", "Black"));
+            products.Add(new Shoes());
         }
     }
 }

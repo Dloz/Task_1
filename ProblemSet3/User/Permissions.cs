@@ -8,7 +8,7 @@
         }
 
         public static void GiveUnlimitCart(Customer customer) 
-            => customer.CustomerCart.Limit = int.MaxValue; // without static
+            => customer.CustomerCart.Limit = int.MaxValue; 
 
         public static void GiveDiscount(Customer customer) {
             customer._discount += discountAmount;

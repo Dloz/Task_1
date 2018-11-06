@@ -6,7 +6,7 @@ using System.Text;
 namespace ProblemSet3 {
 
     public class Order {
-        private Customer _customer;
+        private readonly Customer _customer;
         private Catalog _catalog;
         public Order(Customer customer, Catalog catalog) {
             _customer = customer;

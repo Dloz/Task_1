@@ -5,14 +5,17 @@ using System.Text;
 
 namespace ProblemSet3 {
     public class CustomerType {
-        public bool Regular { get; set; }
-        public bool Advanced { get; set; } 
-        public bool VIP { get; set; }
+        public bool Advanced { get; private set; }
+        public bool Vip { get; private set; }
 
-        public CustomerType(bool advanced = false, bool VIP = false) {
-            Regular = true;
+        public CustomerType(bool advanced = false, bool vip = false) {
             Advanced = advanced;
-            this.VIP = VIP;
+            this.Vip = vip;
+        }
+
+        public override string ToString() {
+            return $"Customer " + (Advanced ? "is " : "is not ") + "advanced "
+                   + "and customer " + (Vip ? "is " : "is not ") + "VIP \n";
         }
     }
 }

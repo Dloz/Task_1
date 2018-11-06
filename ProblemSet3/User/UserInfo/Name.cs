@@ -5,8 +5,8 @@ using System.Text;
 
 namespace ProblemSet3 {
     public struct Name {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        private string FirstName { get; set; }
+        private string LastName { get; set; }
         public Name(string firstName, string lastName) {
             FirstName = firstName;
             LastName = lastName;
